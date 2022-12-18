@@ -88,6 +88,8 @@ body{
     align-items: center;
   }
 
+
+
   .container{
     padding: 0 15px;
   }
@@ -508,6 +510,17 @@ body{
 #leftside .container .left{
   margin-right: 10px;
   width: 10%;
+}
+
+#formdiv .container {
+
+padding-bottom: 10px;
+width: 100%;
+min-height: 10px;
+
+}
+
+.clearer { clear: both; 
 }
 
 @media (min-width: 450px){
