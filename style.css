@@ -499,8 +499,9 @@ body{
   padding-bottom: 50px;
 }
 
+
 #formdiv{
-  display: block;
+  display: none;
 }
 
 #leftside .container{

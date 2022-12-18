@@ -9,6 +9,16 @@ const elemToggleFunc = function (elem) {
 
 function submitFunction() {
   document.getElementById("form").submit();
+
+  var x = document.getElementById("formdiv");
+  var y = document.getElementById("information");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+    x.style.display = "block";
+  }
 }
 
 function createFunction() {
