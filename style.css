@@ -444,6 +444,7 @@ body{
 #panelbtn{
 
   float: right;
+  width: auto;
 
 }
 
@@ -457,19 +458,56 @@ body{
 #rightside{
   border: 1px solid var(--black);
   float: right;
-  width: 50%;
-  height: 400px;
+  width: 60%;
+  height: 500px;
+  margin-right: 10px;
 }
 
 #leftside{
   border: 1px solid var(--black);
-  height: 400px;
+  height: 500px;
   float: left;
-  width: 50%;
+  width: 35%;
   overflow-x: hidden;
   overflow-y:scroll;
   overflow-block: visible;
+  margin-left: 10px;
 
+}
+
+.left{
+  float: left;
+  width: 40%;
+  margin: 10px;
+
+}
+.right{
+  float: right;
+  width: 40%;
+  margin: 10px;
+  border: 1px solid var(--black);
+}
+
+#information{
+  border: 1px solid var(--black);
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#formdiv{
+  display: block;
+}
+
+#leftside .container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#leftside .container .left{
+  margin-right: 10px;
+  width: 10%;
 }
 
 @media (min-width: 450px){

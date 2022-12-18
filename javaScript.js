@@ -7,6 +7,38 @@ const elemToggleFunc = function (elem) {
   elem.classList.toggle("active");
 }
 
+function submitFunction() {
+  document.getElementById("form").submit();
+}
+
+function createFunction() {
+//to do with backend since it requires to delete from it just show created info for now
+  var x = document.getElementById("formdiv");
+  var y = document.getElementById("information");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+    x.style.display = "block";
+  }
+}
+
+function deleteFunction() {
+
+//to do with backend since it requires to delete from it just show deleted info for now
+
+var x = document.getElementById("formdiv");
+var y = document.getElementById("information");
+if (x.style.display === "block") {
+  x.style.display = "none";
+  y.style.display = "block";
+} else {
+  y.style.display = "none";
+  x.style.display = "block";
+}
+
+}
 menuToggleButn.addEventListener("click", function(){
   elemToggleFunc(navbar);
 })
@@ -21,4 +53,6 @@ window.addEventListener("scroll", function(){
     goTopBtn.classList.remove("active");
 
   }
-})
+}
+
+)
