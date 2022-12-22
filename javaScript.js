@@ -48,7 +48,22 @@ if (x.style.display === "block") {
   x.style.display = "block";
 }
 
+
+
 }
+
+function openForm() {
+  document.getElementById("popupform").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupform").style.display = "none";
+}
+
+menuToggleButn.addEventListener("click", function(){
+  elemToggleFunc(navbar);
+})
+
 menuToggleButn.addEventListener("click", function(){
   elemToggleFunc(navbar);
 })

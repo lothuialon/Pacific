@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="javaScript.js"></script>
+  <title>Pacific Product Page</title>
+</head> 
+<header>
+    <div class="container">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="Pacific Logo" width="150px" height="107.5px">
+        </a>
+    <div class="navbar-wrapper">
+        <button class="navbar-menu-btn" data-navbar-toggle-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <div class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#women" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#men" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#girl" class="nav-link">Girl</a>
+            </li>
+            <li class="nav-item">
+              <a href="#boy" class="nav-link">Boy</a>
+            </li>
+            <li class="nav-item">
+              <a href="#baby" class="nav-link">Baby</a>
+            </li>
+          </ul>
+
+          <input type="text" placeholder="Search..." class="searchbar">
+          
+          <button class="btn btn-primary">Login</button>
+    
+        </div>
+
+
+    </div>
+</header>
+  
+
+    </div>
+  <div>
+      <div class="adaptedimage box"><img src="strawhat.jpg" alt="Product image"></div>
+       <div class="boxproductdetails">
+          <article>
+            <label>Product title : </label>
+            
+            <br>
+            <label>Color Code : </label>
+            <br>
+           
+            <p>Size :    <select name="size" id="size">
+                <option value="size1">Size1</option>
+                <option value="size2">Size2</option>
+                <option value="size3">Size3</option>
+                <option value="size4">Size4</option>
+             </select>
+            </p>
+            <br>
+        
+            <label class="sizehelp"></label>
+            <div class="tooltip">Size Guide
+              <span class="tooltiptext"> S: Neck Size: 23 cm, Shoulder: 32
+cm
+               
+                  M: Neck Size: 25 cm, Shoulder: 34
+cm
+              
+                  L: Neck Size: 27 cm, Shoulder: 36
+cm
+               
+                  XL: Neck Size: 29 cm, Shoulder: 38
+cm
+              </span>
+            </div>
+            
+            <br>
+            
+            <br>
+            <label>Piece(s) :  <input type="number" id="quantity" name="quantity" min="1" max="999"> </label>
+
+          <br>
+          <br>
+          <center><button class="button">
+              <span>Add to cart</span>
+              <div class="cart">
+              <svg viewBox="0 0 36 26">
+              <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+              <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+              </svg>
+              </div>
+              </button></center>
+          </article>
+      </div>  
+      
+                 
+      
+  </div> 
+  <br>
+      <br> 
+   <center><h3>Review</h3 ></center>   
+  <div class="reviewbox" style="overflow-y: scroll; border-radius: 10px;" >
+    <article>
+      <p>User 1 : Review 1 </p> <br>
+      <p>User 2 : Review 2 </p> <br>
+      <p>User 3 : Review 3 </p>
+    </article>   
+
+  </div>
+  <br>
+ 
+ <center><button class="btn btn-addreview" onclick="openForm()">Add Review</button></center>
+ <br>
+ <br>
+
+<div class="popupreview">
+    <div class="formcontainerreview" id="popupform">
+    <form class="containerformreview">
+      <center><h2>Add Review</h2>
+      <p style="text-align:left;">Put your review</p>
+      <br>
+      <textarea name="paragraph_text" cols="50" rows="10"></textarea> <br> <br>
+      <button type="button" style="display:inline-block;" class="btn-primary" onclick="closeForm()">Cancel</button> <button type="button" style="display:inline-block;"class="btn-primary">Apply</button></center>
+    </form>
+    </div>
+  </div>
+
+
+<div class="form-popup" id="myForm">
+  <form  class="form-container">
+    <h1>Login</h1>
+
+    <label for="Name"><b>Email</b></label>
+    <input type="text" placeholder="Enter your name" name="name" required>
+
+    <label for="review"><b>Review</b></label>
+    <input type="text" placeholder="Enter your review" name="review" required>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</header>
+</html>
+

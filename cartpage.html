@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="javaScript.js"></script>
+  <title>Cart Page</title>
+</head> 
+<span class="havetoberesponsive"></span>
+<header>
+<body class="backgroundtoset">  
+    <div class="container">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="Pacific Logo" width="150px" height="107.5px">
+        </a>
+    <div class="navbar-wrapper">
+        <button class="navbar-menu-btn" data-navbar-toggle-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <div class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#women" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="#men" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="#girl" class="nav-link">Girl</a>
+            </li>
+            <li class="nav-item">
+              <a href="#boy" class="nav-link">Boy</a>
+            </li>
+            <li class="nav-item">
+              <a href="#baby" class="nav-link">Baby</a>
+            </li>
+          </ul>
+
+          <input type="text" placeholder="Search..." class="searchbar">
+          
+          <button class="btn btn-primary">Login</button>
+    
+        </div>
+
+
+    </div>
+</header>
+
+  
+  <u><h2 style="margin-left: 60px;">My Cart</h2></u>
+  <center>
+    <div class="boxproductdetailscart">
+      <img src="strawhat1.jpeg"></img>
+      <p>Straw Hat, ONE PIECE MUGIWARA NO LUFFY</p>
+      <label style="text-align: right;">Color : Yellow</label>
+      <br>
+      <label style="text-align: right;">Size : L</label>
+      <br>
+      <label style="text-align: right;">Price : 19$</label>
+    </div>
+    <div class="boxtotalcart">
+      <article>
+        <center>
+          <p style="text-align: left;">Total Amount</p> 
+          <br>
+          <p style="text-align: left;">Total Price of Products</p>
+          <br>
+          <p style="text-align: left;">Shipping Cost</p>
+          <br>
+          <p style="text-align: left;">Net Cost</p>
+          <br>
+          <p style="text-align: left; display: inline-block;">Apply discount code </p> <button type="button" class="btnaddcode" style="display:inline-block; margin-left: 20px;" onclick="openForm()">Add Code</button>
+          <br><br> 
+          <button type="button" class="btncheckout">CheckOut</button>
+        </center>
+      </article>
+    </div>
+    <div class="boxloyalty">
+        <article>
+          <p style="text-align: left;">Loyalty Point Information</p>
+          <br>
+          <p style="text-align: left;">Loyalty points via purchase</p>
+          <br>
+          <p style="text-align: left;">Total current loyalty points</p>
+        </article>
+        
+    </div>
+    <div class="boxproductdetailscart">
+      <img src="strawhat1.jpeg"></img>
+      <p>Straw Hat, ONE PIECE MUGIWARA NO LUFFY</p>
+      <label style="text-align: right;">Color : Yellow</label>
+      <br>
+      <label style="text-align: right;">Size : L</label>
+      <br>
+      <label style="text-align: right;">Price : 19$</label>
+    </div>
+       <div class="boxproductdetailscart">
+      <img src="strawhat1.jpeg"></img>
+      <p>Straw Hat, ONE PIECE MUGIWARA NO LUFFY</p>
+      <label style="text-align: right;">Color : Yellow</label>
+      <br>
+      <label style="text-align: right;">Size : L</label>
+      <br>
+      <label style="text-align: right;">Price : 19$</label>
+    </div>
+       <div class="boxproductdetailscart">
+      <img src="strawhat1.jpeg"></img>
+      <p>Straw Hat, ONE PIECE MUGIWARA NO LUFFY</p>
+      <label style="text-align: right;">Color : Yellow</label>
+      <br>
+      <label style="text-align: right;">Size : L</label>
+      <br>
+      <label style="text-align: right;">Price : 19$</label>
+    </div>
+       <div class="boxproductdetailscart">
+      <img src="strawhat1.jpeg"></img>
+      <p>Straw Hat, ONE PIECE MUGIWARA NO LUFFY</p>
+      <label style="text-align: right;">Color : Yellow</label>
+      <br>
+      <label style="text-align: right;">Size : L</label>
+      <br>
+      <label style="text-align: right;">Price : 19$</label>
+    </div>
+
+    
+      
+    </div>
+  </center>
+
+  <div class="popup">
+    <div class="formcontainer" id="popupform">
+    <form action="/action_page.php" class="containerform">
+      <center><h2>Add Code</h2></center>
+      <p style="text-align:left;"> Select from your codes : 
+        <select name="couponcode" id="code">
+          <option value="Code1">Code 1</option>
+          <option value="Code2">Code 2</option>
+        </select>
+      </p>
+      <br>
+      <button type="button" style="display:in" class="btn-primary" onclick="closeForm()">Cancel</button> <button type="button" tyle="display:inline-block;"class="btn-primary">Apply</button>
+    </form>
+    </div>
+  </div>
+  <!--
+ <center> <div>
+    <div class="boxproductdetailscart">
+
+      <img src="strawhat1.jpeg"></img>
+     <label style="text-align: right;">Straw Hat, ONE PIECE MUGIWARA NO LUFFY</label>
+    <article>
+      <br>
+      <label style="text-align: left;">Color : yellow</label>
+      <br>
+      <label>Size : L</label>
+      <br>
+      <label>Price : 19$                              Quantity : 1</label>
+    </article>
+      
+    
+  </div>
+ 
+  </div>
+</div>
+  
+  <br>
+   <div class="boxproductdetailscart">
+    <img src="strawhat1.jpeg"></img>
+    <label style="text-align: right;">Straw Hat, ONE PIECE MUGIWARA NO LUFFY</label>
+    <article>
+      <br>
+      <label style="text-align: left;">Color : yellow</label>
+      <br>
+      <label>Size : L</label>
+      <br>
+      <label>Price : 19$                              Quantity : 1</label>
+    </article>
+  </div>
+  <br><br><br><br><br><br><br><br>
+   <div class="boxtotalcart"> </div> -->
+   </body>
+   </span>
+</html>

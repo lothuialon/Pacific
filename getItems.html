@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Pacific Home Page</title>
+</head>
+<body id="top">
+  <header>
+    <div class="container">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="Pacific Logo" width="150px" height="107.5px">
+        </a>
+        <div class="navbar-wrapper">
+          <button class="navbar-menu-btn" data-navbar-toggle-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+  
+          <div class="navbar" data-navbar>
+            <ul class="navbar-list">
+              <li class="nav-item">
+                <button class="nav-link">Women</button>
+                <div class="subnav-content">
+                  <div class="column">
+                    <h3 class="col-head">Highlights</h3>
+                    <a href="#">Exclusive</a>
+                    <a href="#">Special Discounts</a>
+                    <a href="#">New Season</a>
+                    <a href="#">Pacific Oceans</a>
+                    <a href="#">Eco-Friendly Wear</a>
+                  </div>
+                  <div class="column">
+                    <h3 class="col-head">Categories</h3>
+                    <a href="#">Dresses</a>
+                    <a href="#">Cardigan</a>
+                    <a href="#">Jumper</a>
+                    <a href="#">Blouse</a>
+                    <a href="#">Jeans</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button href="#men" class="nav-link">Men</button>
+                <div class="subnav-content">
+                  <div class="column">
+                    <h3 class="col-head">Highlights</h3>
+                    <a href="#">Exclusive</a>
+                    <a href="#">Special Discounts</a>
+                    <a href="#">New Season</a>
+                    <a href="#">Pacific Oceans</a>
+                    <a href="#">Eco-Friendly Wear</a>
+                  </div>
+                  <div class="column">
+                    <h3 class="col-head">Categories</h3>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Jumper</a>
+                    <a href="#">Outwear</a>
+                    <a href="#">Pyjamas</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button href="#girl" class="nav-link">Girl</button>
+                <div class="subnav-content">
+                  <div class="column">
+                    <h3 class="col-head">Highlights</h3>
+                    <a href="#">Exclusive</a>
+                    <a href="#">Special Discounts</a>
+                    <a href="#">New Season</a>
+                    <a href="#">Sleep Collection</a>
+                    <a href="#">Disney Moana</a>
+                    <a href="#">Waves Collection</a>
+                  </div>
+                  <div class="column">
+                    <h3 class="col-head">Categories</h3>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Leggings</a>
+                    <a href="#">Jumper</a>
+                    <a href="#">Dress</a>
+                    <a href="#">Overalls</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button href="#boy" class="nav-link">Boy</button>
+                <div class="subnav-content">
+                  <div class="column">
+                    <h3 class="col-head">Highlights</h3>
+                    <a href="#">Exclusive</a>
+                    <a href="#">Special Discounts</a>
+                    <a href="#">New Season</a>
+                    <a href="#">Avengers</a>
+                    <a href="#">Star Wars</a>
+                    <a href="#">Pacific Oceans</a>
+                    <a href="#">Eco-Friendly Wear</a>
+                  </div>
+                  <div class="column">
+                    <h3 class="col-head">Categories</h3>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Hoodies</a>
+                    <a href="#">Outwear</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Underwear</a>
+                    <a href="#">Socks</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <button href="#baby" class="nav-link">Baby</button>
+                <div class="subnav-content">
+                  <div class="column">
+                    <h3 class="col-head">Highlights</h3>
+                    <a href="#">Exclusive</a>
+                    <a href="#">Organic Products</a>
+                    <a href="#">Monster Trucks</a>
+                    <a href="#">Pacific Oceans</a>
+                    <a href="#">Eco-Friendly Wear</a>
+                  </div>
+                  <div class="column">
+                    <h3 class="col-head">Categories</h3>
+                    <a href="#">Shirts</a>
+                    <a href="#">Sweatshirts</a>
+                    <a href="#">Jumper</a>
+                    <a href="#">Jeans</a>
+                    <a href="#">Underwear</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input type="text" placeholder="Search" class="searchbar">
+              </li>
+               
+              <div class="person-ion">
+                <ion-icon name="person-outline" role="img" class="md-hydrated-acc" aria-label="briefcase outline">
+                </ion-icon>
+                <h4 class="person-text">Account</h4>
+                <div class="acc_dropdown_content">
+                  <a href="#">My Orders</a>
+                  <a href="#">Discount Codes</a>
+                  <a href="#">User Information</a>
+                </div>
+              </a>
+            </div>
+              <a href="#" class="cart-ion">
+                <ion-icon name="cart-outline" role="img" class="md-hydrated-cart" aria-label="briefcase outline">Cart</ion-icon>
+                <h4 class="cart-text">Cart</h4>
+              </a>
+            
+            </ul>
+      
+          </div>
+  
+  
+      </div>
+
+  
+
+    </div>
+
+
+  </header>
+
+
+  <main>
+
+    <div class="container" style="width: 100%;">
+
+      <h1 id="itemH2"> Example Heading</h1>
+
+
+      
+
+    </div>
+
+    <div class="container">
+
+        <section class="hero" id="list-items">
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="image-box">
+
+              <div class="image-div" id="image1">
+              </div>
+
+            </div>
+
+            <div class="text-div">
+
+              <h2 class="card-text">Example</h2>
+              <h3 class="card-text">$29.99</h3>
+              <p class="card-text">Example text</p>
+
+              <button class="btn btn-primary" id="listbtn" onclick="addCart()">Add to Cart</button>
+      
+
+            </div>
+
+          </div>
+
+
+
+
+        </section>
+
+
+    </div>
+
+
+  </main>
+
+
+
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-link-box">
+          <ul class="footer-link-list">
+            <li>
+               <h3 class="h4 link-title">Categories </h3>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Black Friday</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Cyber Monday</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Back to school</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Winter Wear</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-link-list">
+            <li>
+               <h3 class="h4 link-title">Customer Service </h3>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Frequently Asked Questions</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Our Stores</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Returns & Exchanges</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Order & Delivery</a>
+            </li>
+
+
+          </ul>
+
+          <ul class="footer-link-list">
+            <li>
+               <h3 class="h4 link-title">Shopping </h3>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Installment Table</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Size Chart</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Track your order</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">E-archive Invoice</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Sitemap</a>
+            </li>
+
+
+          </ul>
+
+          <ul class="footer-link-list">
+            <li>
+               <h3 class="h4 link-title">Sustainability </h3>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pacific Promises</a>
+            </li>
+
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        <a href="#">@Pacific all rights reserved &copy; 2022</a>
+      </p>
+    </div>
+  </footer>
+
+<a href="#top" class="go-top active">
+  <ion-icon name="chevron-up-outline"></ion-icon>
+</a>
+
+
+  <script src="javaScript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>

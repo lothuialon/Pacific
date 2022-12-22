@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="checkout.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <title>Pacific Home Page</title>
-</head>
+  <title>Checkout Page</title>
+</head> 
 <body id="top">
-  <header>
+<header>
     <div class="container">
         <a href="#" class="logo">
           <img src="logo.png" alt="Pacific Logo" width="150px" height="107.5px">
@@ -153,11 +153,6 @@
               <ion-icon name="cart-outline" role="img" class="md-hydrated-cart" aria-label="briefcase outline">Cart</ion-icon>
               <h4 class="cart-text">Cart</h4>
             </a>
-
-            <a href="#" class="logout-ion">
-              <ion-icon name="log-out-outline" role="img" class="md-hydrated-logout" aria-label="briefcase outline">Logout</ion-icon>
-              <h4 class="logout-text">Logout</h4>
-            </a>
           
           </ul>
     
@@ -172,257 +167,132 @@
 
 
   </header>
-
-  <main>
+ </body>
+<main>
     <article>
       <section class="hero" id="home">
-        <div class="container">
           <div class="hero-content">
-            <h1 class="h1 hero-title">
-              Pacific, bringing the ocean to you! 
-            </h1>
-              <p class="hero-text">
-                We believe in sustainable, environmental friendly model of fashion.
-              </p>
+            <form class="form" id="registration_form">
+              <h1 class="form__title">Checkout</h1>
+              <div class="form__message form__message--error"></div>
+    
+                <div class="form__input-group">
+                  <label class="general_label" for="email"><b>Total Price of Products</b></label>
+                  <input type="text" class="form__input" name="ttlprice" id="ttlproductprice" autofocus placeholder="Total Price of Products" readonly>
+                  <div class="form__input-error-message"></div>
+                </div>
+    
+                <div class="form__input-group">
+                  <label class="general_label" for="shipcost"><b>Shipping Cost</b></label>
+                  <input type="text" class="form__input form" name="ship_cost" id="shippingcost" autofocus placeholder="Shipping Cost" readonly>
+                  <div class="form__input-error-message"></div>
+                </div>
 
-              <button class="btn  btn-primary">
-                  Login
-              </button>
+                <div class="form__input-group">
+                  <label class="general_label" for="last_name"><b>Net Cost</b></label>
+                  <input type="text" class="form__input" name="net_cost" id="net_cost" autofocus placeholder="Net Cost" readonly>
+                  <div class="form__input-error-message"></div>
+                </div>
 
+                <div class="form__input-group">
+                  <label class="general_label" for="email"><b>After discount : </b></label>
+                  <input type="text" class="form__input" name="afterdiscount" id="afterdiscount" autofocus placeholder="After Discount" readonly>
+                  <div class="form__input-error-message"></div>
+                </div>
+
+                <div class="form__input-group">
+                  <label class="general_label" for="email"><b>Confirm Address</b></label>
+                  <input type="text" class="form__input" name="confirm_address" id="confirm_address" autofocus placeholder="Confirm Address" required>
+                  <div class="form__input-error-message"></div>
+                </div>
+
+
+                <div class="form__input-group">
+                  <label class="general_label" for="Gender"><b>Method of payment</b></label>
+                  <div class="form__input-radio">
+                  <input type="radio" id="male" name="deliverinfo" value="online">
+                  <label for="male">Online </label>
+                  <input type="radio" id="female" name="deliverinfo" value="Delivery">
+                  <label for="female">On Delivery</label>
+                  </div>
+                 
+                  <div class="form__input-error-message"></div>
+                </div>
+               
+
+                
+
+                <div id="registration_error_msg_holder">
+                  <p id="registration_error_msg_credentials">Password and Confirm Password are different!</p>
+                  <p id="registration_error_msg_missing">All fields are mandatory!</p>
+                </div>
+
+                <div class="misc">
+                  
+                  <button class="form__button" type="submit" id="Cancel">Cancel</button>
+                  <button class="form__button" type="button" id="purchase" onclick="openForm()">Purchase</button>
+
+                </div>
+    
+                 
+    
+                           
+          </form>
+              
           </div>
-
-
-        </div>
-
-
-
 
 
       </section>
+      <div class="popup">
+        <div class="formcontainer" id="popupform">
+        <form class="containerform">
+          <div class="form__input-groupcard">
+            <center>
+            <article>
+                  <label class="general_labelcard" for="email"><b>Select from your codes : </b></label> <br>
+                  <b>Card Number</b> <input type="text" class="form__input" name="cardinput" id="card" autofocus placeholder="Credit Card Number" required>  <br>
+                  
+                    <b>Expiration Date </b> 
+                    
+                    <select name="month" id="month" style="margin-left: 10px; display: inline-block;">
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                      <option value="January">January</option>
 
+                      <option value="Febuary">Febuary</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
 
-      <section>
-        <section class="about" id="about">
-          <div class="about-top">
-            <h2 class="h2 section title">What we do</h2>
-
-            <p class="section-text">
-              For every 5 purchases made in Pacific, 5% of the profit is donated to the WildLife Protection agencies across the world.
-            </p>
-
-            <ul class="about-list">
-              <li>
-                <div class="product-card" style="width: auto; float: none;">
-
-                  <div class="image-box" id="indeximg">
-      
-                    <div class="image-div" id="image2">
-                    </div>
-      
-                  </div>
-      
-                  <div class="text-div">
-      
- 
-                    <h3 class="card-text cart-title">Hoodie</h3>
-
-      
-                  </div>
-      
-                </div>
-              </li>
-
-              <li>
-                <div class="product-card" style="width: auto; float: none;">
-
-                  <div class="image-box" id="indeximg">
-      
-                    <div class="image-div" id="image2">
-                    </div>
-      
-                  </div>
-      
-                  <div class="text-div">
-      
- 
-                    <h3 class="card-text cart-title">Hoodie</h3>
-
-      
-                  </div>
-      
-                </div>
-              </li>
-
-              <li>
-                <div class="product-card" style="width: auto; float: none;">
-
-                  <div class="image-box" id="indeximg">
-      
-                    <div class="image-div" id="image2">
-                    </div>
-      
-                  </div>
-      
-                  <div class="text-div">
-      
- 
-                    <h3 class="card-text cart-title">Hoodie</h3>
-
-      
-                  </div>
-      
-                </div>
-              </li>
-
-            </ul>
-
-
-
-
+                      <option value="Juin">Juin</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      
+                    </select>
+                    <input type="text" name="year" class="form__input" placeholder="Year">
+                    <br>
+                  
+                    <b>CCV </b> 
+                    <input type="text" name="cvv" class="form__input" placeholder="CCV">  
+                    
+                  <div class="form__input-error-message"></div>
+            </article> 
+            <br>
+            <br>
+            <br>     
+            </center>
           </div>
-
-          <div class="about-bottom">
-            <figure class="about-bottom-banner">
-              <img src="about-banner.png" alt="about banner" class="about-banner">
-            </figure>
-
-          <div class="about-bottom-content">
-            <h2 class="h2 section-title">
-              We are interested in a better tomorrow
-            </h2>
-            <p class="section-text">
-              Every piece of Pacific sold, helps in stopping the melting ice caps.
-            </p>
-            <button class="btn btn-secondary">
-              Sign up here!
-            </button>
-
-          </div>
-
-
-
-
-          </div>
-
-
-
-
-        </section>
-
-
-      </section>
-
-    </article>
-
-
-  </main>
-
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-link-box">
-          <ul class="footer-link-list">
-            <li>
-               <h3 class="h4 link-title">Categories </h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Black Friday</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Cyber Monday</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Back to school</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Winter Wear</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-link-list">
-            <li>
-               <h3 class="h4 link-title">Customer Service </h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Frequently Asked Questions</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Contact Us</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Our Stores</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Returns & Exchanges</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Order & Delivery</a>
-            </li>
-
-
-          </ul>
-
-          <ul class="footer-link-list">
-            <li>
-               <h3 class="h4 link-title">Shopping </h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Installment Table</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Size Chart</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Track your order</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">E-archive Invoice</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Sitemap</a>
-            </li>
-
-
-          </ul>
-
-          <ul class="footer-link-list">
-            <li>
-               <h3 class="h4 link-title">Sustainability </h3>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Pacific Promises</a>
-            </li>
-
-
-          </ul>
-
-
-        </div>
-
-
+          <button type="button" style="display:inline-block;" class="btn-primary" onclick="closeForm()">Cancel</button> <button type="button" style="display:inline-block;"class="btn-primary">Submit Details</button>
+        </form>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p class="copyright">
-        <a href="#">@Pacific all rights reserved &copy; 2022</a>
-      </p>
-    </div>
-  </footer>
-
-<a href="#top" class="go-top active">
-  <ion-icon name="chevron-up-outline"></ion-icon>
-</a>
+      </div>
 
 
+
+            
   <script src="javaScript.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
-</body>
 </html>
